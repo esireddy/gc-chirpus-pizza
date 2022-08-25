@@ -1,0 +1,22 @@
+<div>
+  <h1> Welcome to {{title}} </h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table-primary">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col"><b>Item</b></th>
+        <th scope="col"><b>Category</b></th>
+        <th scope="col"><b>Price</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of Items">
+        <td>{{item.ItemName}}</td>
+        <td>{{item.ItemCategory}}</td>
+        <td>{{item.ItemPrice | currency}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
